@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+/* Base styles and smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#0a192f] text-gray-300;
+}
+
+/* Keyframes for the skills marquee effect */
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-slide {
+  animation: slide 40s linear infinite;
+}
+
+/* For the second row (slides right) */
+@keyframes slide-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-reverse {
+  animation: slide-reverse 40s linear infinite;
+}
+
+/* This pauses either animation on hover */
+.group:hover .animate-slide,
+.group:hover .animate-slide-reverse {
+  animation-play-state: paused;
+}
+
