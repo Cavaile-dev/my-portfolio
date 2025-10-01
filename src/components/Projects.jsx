@@ -1,4 +1,13 @@
 import React, { useState } from 'react';
+import projectImg1_1 from '../assets/project1-1.png';
+import projectImg1_2 from '../assets/project1-2.png';
+import projectImg1_3 from '../assets/project1-3.png';
+import projectImg2_1 from '../assets/project2-1.png';
+import projectImg2_2 from '../assets/project2-2.png';
+import projectImg3_1 from '../assets/project3-1.png';
+import projectImg3_2 from '../assets/project3-2.png';
+import projectImg4_1 from '../assets/project4-1.png';
+import projectImg4_2 from '../assets/project4-2.png';
 
 // --- PROJECT DATA (No changes needed here) ---
 const projectsData = [
@@ -6,7 +15,7 @@ const projectsData = [
         title: 'Garment Worker Productivity Predictor',
         description: 'This is the project I built with my group for my machine learning course final project. Our project uses a CatBoost Classification model to forecast a team\'s productivity. By analyzing operational factors, the app determines if a team will be Productive or Not Productive, helping managers optimize performance.',
         tools: ['Python', 'Pandas', 'Scikit-learn', 'Matplotlib', 'StreamLit', 'CatBoost'],
-        images: ['src/assets/project1-1.png', 'src/assets/project1-2.png', 'src/assets/project1-3.png'],
+        images: [projectImg1_1, projectImg1_2, projectImg1_3],
         githubUrl: 'https://github.com/Cavaile-dev/garmentivity-app',
         liveUrl: 'https://garmentivity-app.streamlit.app/',
     },
@@ -14,7 +23,7 @@ const projectsData = [
         title: 'Movie App with Top 5 Trending',
         description: 'I learned react with this project based learning from a YouTube channel called \"JavaScript Mastery\". I learned a lot about react components, states and hooks, UseEffect hook, fetching API from the Movie DB API, using appwrite to implement top 5 trending movies by tracking user searches in a database, and many more.',
         tools: ['React', 'Javascript', 'Appwrite', 'Tailwind CSS', 'Vite', 'The Movie Database (TMDB) API'],
-        images: ['src/assets/project2-1.png', 'src/assets/project2-2.png'],
+        images: [projectImg2_1, projectImg2_2],
         githubUrl: 'https://github.com/yourprofile/customer-segmentation',
         liveUrl: '',
     },
@@ -22,7 +31,7 @@ const projectsData = [
         title: 'Demand Forecasting ML App',
         description: 'This project is a comprehensive AI-powered demand forecasting application designed to predict the Number of Products Sold based on sales, financial, and supply chain data. It follows a complete data science workflow, from initial Exploratory Data Analysis (EDA) to a final, optimized model deployment. The core of the solution is an optimized Random Forest Regressor model, which was rigorously refined using techniques like feature importance analysis and hyperparameter tuning to ensure accuracy and efficiency.',
         tools: ['pandas', 'matplotlib', 'seaborn', 'scikit-learn', 'pickle', 'streamlit', 'numpy', 'plotly'],
-        images: ['src/assets/project3-1.png', 'src/assets/project3-2.png'],
+        images: [projectImg3_1, projectImg3_2],
         githubUrl: 'https://github.com/Cavaile-dev/demand-forecasting-ml-streamlit',
         liveUrl: 'https://ml-demand-forecasting.streamlit.app/',
     },
@@ -30,7 +39,7 @@ const projectsData = [
         title: 'Comparing Models to Predict Tweet Sentiment',
         description: 'In this NLP project, my group and I were comparing the performance of SOTA models such as RoBERTa, BERT, and DistilBERT with TF-IDF for the traditional model on a dataset of 100,000 tweets to predict its sentiment. We compared the performance of the models using the F1-score and the ROC-AUC.',
         tools: ['pandas', 'scikit-learn', 'transformers', 'torch', 'numpy', 'scipy', 'datasets'],
-        images: ['src/assets/project4-1.png', 'src/assets/project4-2.png'],
+        images: [projectImg4_1, projectImg4_2],
         githubUrl: 'https://github.com/Cavaile-dev/NLP-Model-Comparison-for-Sentiment-Analysis',
         liveUrl: '',
     },
